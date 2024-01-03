@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.animation-from-left {
+  opacity: 0;
+  transform: translate(-300px, 0);
+  transition: all 0.5s ease-out;
+  transition-delay: 0.2s;
+}
+.animation-from-right {
+  opacity: 0;
+  transform: translate(300px, 0) scale(1.15);
+  transition: all 0.5s ease-out;
+  transition-delay: 0.2s;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.services:hover {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  transform: scale(1.1);
+}
+
+.animation-from-top {
+  opacity: 0;
+  transform: translate(0, -300px);
+  transition: all 0.5s ease-out;
+  transition-delay: 0.2s;
+}
+.animation-from-bottom {
+  opacity: 0;
+  transform: translate(0, 300px);
+  transition: all 0.5s ease-out;
+  transition-delay: 0.2s;
+}
+
+.animate {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#services {
+  height: 30rem;
+  width: 100%;
+}
+.services {
+  height: 15rem;
+  width: 15rem;
+  margin: 2rem;
+  transition: all 0.5s ease-out;
+}
+
+.mb {
+  margin-bottom: 6rem;
+}
+
+#underscore {
+  font-weight: 900;
+  animation: blink 1s linear 2s infinite alternate;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+button[type="button"] {
+  transition: all 0.3s ease;
+  color: antiquewhite;
+}
+button[type="button"]:hover {
+  color: rgb(16, 161, 16);
+  transform: scale(1.05);
+}
+
+ul li a:hover,
+.links:hover,
+.profile img:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.links {
+  color: #0a8212;
+  font-size: 1.2rem;
+}
+.img-size {
+  height: 11rem;
+  width: 11rem;
+}
+img[alt="logo"] {
+  transition: all 1s ease-out;
+}
+
+img[alt="logo"]:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.content,
+.profile,
+.logo {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.socials i,
+.profile img {
+  transition: all 0.3s ease-out;
+}
+
+.contacts {
+  color: #0a8212;
+}
+.socials i:hover {
+  opacity: 0.75;
+  color: rgb(0, 255, 0);
+  cursor: pointer;
+}
